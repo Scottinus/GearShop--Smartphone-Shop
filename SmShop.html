@@ -1,0 +1,347 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Luca Sorace">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GEAR SHOP</title>
+
+     <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet"> 
+</head>
+
+<style>
+.boxSmartphone{
+    border : 1px solid #eee;
+
+    display: grid;
+  width: 100%;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(30px, auto);
+}
+/*.boxSmartphone >div{
+    background:#eee;
+}
+.boxSmartphone >div:nth-child(odd){
+    background: #ddd;
+}
+*/
+.headerContainer{
+    display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(10px, auto);
+}
+#searchBar{
+   margin-top: 1em;
+   margin-right: 2em;
+   
+}
+ #search{
+    height: 3em;
+    width: 25em;
+    text-align: center;
+    border-radius: 2px;
+ }
+
+ #srcButton{
+    background-color: #56e291;
+                color:white;
+                width: 4em;
+                height: 3em;
+                border: 1px solid white;
+ }
+
+#Subtitle{
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+    background-color: #56e290b2;
+    border-radius: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+  /*  border: 1px solid #41574a;*/
+}
+
+.brand{
+    margin-right: 30%;
+
+}
+
+.mainContainer{
+
+    display: grid;
+    grid-template-rows: (4, 1f);
+    border : 4px solid #eee;
+
+}
+
+.miniTitle{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 1em; 
+    margin-top: 2em;
+    color:rgb(70, 70, 70);
+  background-image: linear-gradient(to right, #56e291, rgba(238, 238, 238, 0));
+    margin-right: 60em;
+}
+
+ul{
+    font-size: 1em;
+    margin-left: 20em;
+}
+
+.priceText{
+    font-size:2em;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+th{
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+td{
+ border: 3px solid  #eee;
+ border-left: 0px;
+ border-right: 0px;
+ border-bottom: 0px;
+}
+
+.smartphoneTitle{
+    font-size: 25px;
+    background-color:#eee;
+    font-family: monospace;
+}
+
+#cart{
+    
+    margin-top: 2em;
+    margin-left: 20em;
+}
+.cartBox{
+    display: grid;
+    grid-template-columns: (2, 1f);
+
+}
+
+#footer{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.zoom{
+    font-size: 300px;
+}
+
+.brand:hover{
+    background-color: #eee;
+}
+</style>
+
+<body>
+    <div class ="headerContainer">
+       <div><img src="gshop.png" alt= "logo shop" width= "150px"></div> 
+            <div id="searchBar">
+            <input type="text" id= "search" placeholder="Search.." name="search">
+            <input type="button" value="Add" id="srcButton"/> 
+        </div>
+       <div class ="cartBox">
+           <div id ="cart"><img src="rentshop.png" alt= "logo shop" width= "50px"></div>
+        </div> 
+
+    </div>
+
+<h2 id ="Subtitle">Our brand</h2>
+ <div class ="mainContainer">
+<div class ="boxSmartphone">
+            <div class ="brand"><img src ="apple.png" alt ="Apple logo" width = "250px">
+            <h2>Apple</h2>
+            </div>
+
+            <div class ="brand"><img src ="samsung.png" alt ="samsung logo" width = "250px">
+                <h2>Samsung</h2>
+                </div>
+
+            <div class ="brand"><img src ="huawei.png" alt ="huawei logo" width = "250px">
+                 <h2>Huawei</h2>
+                </div>
+            
+                <div class ="brand"><img src ="oneplus.png" alt ="oneplus logo" width = "250px">
+                    <h2>OnePlus</h2>
+                    </div>
+
+                    <div class ="brand"><img src ="asus.png" alt ="asus logo" width = "250px">
+                        <h2>Asus</h2>
+                        </div>
+    </div>
+
+    <div><h3 class ="miniTitle">TOP RATED</h3></div>
+<div class ="products">
+<table>
+<tr>
+    <th>Smartphone</th>
+    <th>Description</th>
+    </tr>
+
+    <!--IPHONE XS SECTION-->
+    <tr>
+         <td><img src= "iphoneXS.jpg" alt= "Iphone XS" width = "300px" height="500px"></td>
+         <td>
+             <ul>
+                    <h3 class="smartphoneTitle">Apple iPhone XS (256GB) - Gold </h3>
+           <li>5.8 Inch super Retina display (OLED) with HDR</li>
+
+           <li>IP68 dust and water resistant (maximum depth of 2 m up to 30 minutes) </li>
+
+           <li>12MP dual cameras with dual OIS and 7MP True Depth front camera-Portrait mode,<br>
+                Portrait Lighting, Depth Control, and Smart HDR 
+           </li>
+
+            <li>Face ID for secure authentication and Apple Pay </li>
+
+            <li>A12 Bionic with next-generation Neural Engine </li>
+
+                <h3 class ="priceText">Prezzo: 1.123,99€</h3>
+                <h4>Buy it now on Amazon:  
+                        <a href ="https://www.amazon.it/Apple-iPhone-XS-64GB-Oro/dp/B07J6HZT43/ref=sr_1_1_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=iphone+xs&qid=1561558083&s=gateway&sr=8-1-spons&psc=1" target="_blank"><img src = "amazon.png" alt ="Amazon Logo" width ="50px"></a>
+                    </h4>
+
+            </ul>
+        </td>
+</tr>
+ <!--END-->
+  <!--SAMSUNG GALAXY S9 SECTION-->
+  <tr>
+        <td><img src= "galaxyS9.jpg" alt= "Samsung Galaxy S10" width = "380px" height="380px"></td>
+        <td>
+            <ul>
+                    <h3 class="smartphoneTitle">Samsung Galaxy S10 128GB</h3>
+          <li> The Galaxy S10 takes the classic S series a giant leap further. <br>
+              It features a large curved-edge screen and puts vault-like security at your fingertips with <br>
+              our new Ultrasonic Fingerprint Scanner. </li>
+
+          <li> The Galaxy S10 introduces a stunning new Infinity-O Display. <br>
+              It's crafted from flawless glass which wraps perfectly from edge to edge.<br> 
+              It's minimal, beautiful and effortlessly elegant. </li>
+
+          <li>PowerShare gives you the superpower to share your power. Bring your friend's phone back to life if it's drained.<br> 
+              Stack your Galaxy Watch on top of your Galaxy S10 and charge them at the same time.  </li>
+
+           <li>Capture and keep moments as you see them. With a front camera<br>
+                and 3 rear cameras featuring an ultra-wide and zoom lens, the Galaxy S10 lets you shoot every scene <br>
+                just as your eyes see it. </li>
+
+           <li> International Model comes with 2 years warranty with the Company you purchase with. </li>
+
+               <h3 class ="priceText">Prezzo: 610,00€</h3>
+               <h4>Buy it now on Amazon:  
+                    <a href ="https://www.amazon.it/Samsung-Smartphone-Espandibili-Versione-Italiana/dp/B07NDW5NSW/ref=sr_1_3?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=galaxy+s10&qid=1561558028&s=gateway&sr=8-3" target="_blank"><img src = "amazon.png" alt ="Amazon Logo" width ="50px"></a>
+                </h4>
+
+           </ul>
+       </td>
+</tr>
+   <!--END-->
+    <!--HUAWEI MATE20 SECTION-->
+    <tr>
+            <td><img src= "mate20.jpg" alt= "Huawei mate20" width = "450px" height="450px"></td>
+            <td>
+                <ul>
+               <h3 class="smartphoneTitle">Huawei Mate 20 128 GB</h3>
+              <li>Extremely fast Kirin 980 octa-core processor with dual AI power  </li>
+    
+              <li> Powerful 4000 mAh battery with TÜV certified Supercharge function </li>
+    
+              <li>Top Photos with 12 + 16 + 8 MP Leica Triple Camera & 24 MP Front Camera  </li>
+    
+               <li>4 GB RAM and 128 GB ROM, expandable up to 256 GB with Nano Memory Card  </li>
+
+                   <h3 class ="priceText">Prezzo: 399,00€</h3>
+                   <h4>Buy it now on Amazon:  
+                        <a href ="https://www.amazon.it/Huawei-Originale-Processore-Intelligenza-Artificiale/dp/B07HYR66WG/ref=sr_1_1_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=huawei+mate+20&qid=1561558975&s=gateway&sr=8-1-spons&psc=1" target="_blank"><img src = "amazon.png" alt ="Amazon Logo" width ="50px"></a>
+                    </h4>
+    
+               </ul>
+           </td>
+    </tr>
+ <!--END-->
+     <!--ONEPLUS 7 PRO SECTION-->
+     <tr>
+            <td><img src= "oneplus.jpg" alt= "oneplus 7 pro" width = "450px" height="450px"></td>
+            <td>
+                <ul>
+               <h3 class="smartphoneTitle">OnePlus 7 Pro Mirror Grey 8GB+256GB </h3>
+              <li>6.67-inch full AMOLED display with a QHD+ resolution and a 90 Hz refresh rate </li>
+    
+              <li> Qualcomm Snapdragon 855 mobile platform the power to win </li>
+    
+              <li>Triple-lens setup covering a wide range of focal lengths from 17mm to 78mm to meet your every need  </li>
+    
+               <li>Premium and unique design enveloped in the sturdy Gorilla Glass 5 </li>
+
+               <li>Warp Charge 30 - Ready in 20 minutes  </li>
+
+                   <h3 class ="priceText">Prezzo: 749,44€</h3>
+                   <h4>Buy it now on Amazon:  
+                        <a href ="https://www.amazon.it/OnePlus-Pro-Mirror-Grey-256GB/dp/B07R97WZJ9/ref=sr_1_1_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=oneplus+7&qid=1561559179&s=gateway&sr=8-1-spons&psc=1" target="_blank"><img src = "amazon.png" alt ="Amazon Logo" width ="50px"></a>
+                    </h4>
+    
+               </ul>
+           </td>
+    </tr>
+ <!--END-->
+      <!--ASUS ZENFONE PRO M2 SECTION-->
+      <tr>
+            <td><img src= "zenfone.jpg" alt= "asus zenfone max pro m2" width = "350px" height="400px"></td>
+            <td>
+                <ul>
+               <h3 class="smartphoneTitle">Asus ZenFone Max Pro M2 Midnight 8GB+256GB </h3>
+              <li>Asus Zenfone Max Pro M2, ZB631KL-4D067EU, <br>
+                  6.3 "Notch IPS Panel 19: 9 FHD + with Corning Gorilla 6 glass,  <br>
+                  Qualcomm Snapdragon 660 octa-core, dual sim, 6 GB RAM, 64 GB Storage,  <br>
+                  front + double camera rear camera, 5000mAh battery </li>
+    
+              <li>6,3" Notch IPS Panel 19:9 FHD+ with corning gorilla 6 glass </li>
+    
+              <li>Qualcomm Snapdragon 660 octa-core  </li>
+    
+               <li>6GB Ram, 64GB storage, dual sim  </li>
+
+               <li>13M front camera + dual 12M + 5M rear camera</li>
+
+                   <h3 class ="priceText">Prezzo: 264,99€</h3>
+                   <h4>Buy it now on Amazon:  
+                        <a href ="https://www.amazon.it/Asus-ZenFone-Max-Midnight-Blue/dp/B07MWLB8KG/ref=sr_1_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&keywords=asus&qid=1561559429&s=gateway&sr=8-1" target="_blank"><img src = "amazon.png" alt ="Amazon Logo" width ="50px"></a>
+                    </h4>
+    
+               </ul>
+           </td>
+    </tr>
+ <!--END-->
+</table>
+
+</div>
+</div>
+
+<div id ="footer"><footer>
+        <p><strong>Gear Shop</strong></p>
+        <p>      Lakewood
+                California
+                Stati Uniti 
+        </p>
+        <p>You can find us on <strong>Google Maps</strong>:
+            <a href="https://www.google.com/maps/place/Lakewood,+California,+Stati+Uniti/@33.844688,-118.1480705,13z/data=!3m1!4b1!4m13!1m7!3m6!1s0x808fb9fe5f285e3d:0x8b5109a227086f55!2sCalifornia,+Stati+Uniti!3b1!8m2!3d36.778261!4d-119.4179324!3m4!1s0x80dd325fe4a8811d:0xc75ba86029c978c5!8m2!3d33.8535953!4d-118.1339264">
+                <img src="maps.png" alt= "google maps logo" width= "50px"></a>.</p>
+      </footer></div>
+
+<script>
+
+function zoomOn(){
+    document.getElementsByTagName("li")[0].setAttribute("class", "zoom"); 
+
+}
+
+</script>
+</body>
+</html>
