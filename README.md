@@ -1,0 +1,2 @@
+# GearShop--Smartphone-Shop
+StriveSchoolProject
